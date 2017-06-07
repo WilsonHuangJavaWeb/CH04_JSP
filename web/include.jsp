@@ -6,7 +6,17 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+    if ("1".equals(request.getParameter("style"))) {
+%>
 <%@include file="head.jsp" %>
+<%
+} else if ("2".equals(request.getParameter("style"))) {
+%>
+<%@include file="head2.jsp" %>
+<%
+    }
+%>
 <p style="line-height: 22px;text-indent: 2em"></p>
 <p style="line-height: 22px;text-indent: 2em">
     到日本旅遊時，不難發現有許多居酒屋、公廁、百貨公司的洗手間衛生紙最後一格折成三角形，但別以為這代表清潔人員剛打掃過而已，事實上是許多上一位使用者的「貼心舉動」。日本有醫院特別貼出告示，警告這種貼心舉動反而是傳染病的「幕後黑手」，建議民眾不要再這樣做。</p>
